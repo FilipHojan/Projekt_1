@@ -32,6 +32,7 @@ namespace Laboratoria1
             this.components = new System.ComponentModel.Container();
             this.label1 = new System.Windows.Forms.Label();
             this.timer2 = new System.Windows.Forms.Timer(this.components);
+            this.buttom1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -39,7 +40,7 @@ namespace Laboratoria1
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label1.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.label1.Location = new System.Drawing.Point(170, 80);
+            this.label1.Location = new System.Drawing.Point(185, 71);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(425, 108);
             this.label1.TabIndex = 0;
@@ -52,11 +53,23 @@ namespace Laboratoria1
             this.timer2.Interval = 1000;
             this.timer2.Tick += new System.EventHandler(this.label1_Click);
             // 
+            // buttom1
+            // 
+            this.buttom1.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.buttom1.Location = new System.Drawing.Point(282, 274);
+            this.buttom1.Name = "buttom1";
+            this.buttom1.Size = new System.Drawing.Size(227, 98);
+            this.buttom1.TabIndex = 1;
+            this.buttom1.Text = "Przejdź do kolejnej strony";
+            this.buttom1.UseVisualStyleBackColor = true;
+            this.buttom1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.buttom1);
             this.Controls.Add(this.label1);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -71,6 +84,7 @@ namespace Laboratoria1
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Timer timer2;
+        private System.Windows.Forms.Button buttom1;
     }
 }
 
