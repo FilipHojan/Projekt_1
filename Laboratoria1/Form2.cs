@@ -33,6 +33,14 @@ namespace Laboratoria1
             m = 0;
             s = 0;
             ms = 0;
+            label1.Text = "00:00:00:00";
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form1 f1 = new Form1();
+            f1.Show();
         }
 
         public Form2()
