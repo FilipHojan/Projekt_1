@@ -16,5 +16,15 @@ namespace Laboratoria1
         {
             InitializeComponent();
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+            label1.Text = DateTime.Now.ToString("t");
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            timer2.Start();
+        }
     }
 }
