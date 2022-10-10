@@ -15,6 +15,26 @@ namespace Laboratoria1
     {
         System.Timers.Timer timer;
         int h, m, s, ms;
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            timer.Start();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            timer.Stop();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            timer.Stop();
+            h = 0;
+            m = 0;
+            s = 0;
+            ms = 0;
+        }
+
         public Form2()
         {
             InitializeComponent();
