@@ -46,7 +46,7 @@ namespace Laboratoria1
             this.label1.Size = new System.Drawing.Size(425, 108);
             this.label1.TabIndex = 0;
             this.label1.Text = "00:00:00";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // timer2
