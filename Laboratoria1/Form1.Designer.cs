@@ -38,38 +38,41 @@ namespace Laboratoria1
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("OCR A Extended", 72F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label1.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.label1.Location = new System.Drawing.Point(185, 71);
+            this.label1.Location = new System.Drawing.Point(264, 75);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(425, 108);
+            this.label1.Size = new System.Drawing.Size(337, 99);
             this.label1.TabIndex = 0;
-            this.label1.Text = "00:00:00";
+            this.label1.Text = "00:00";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // timer2
             // 
-            this.timer2.Interval = 1000;
+            this.timer2.Enabled = true;
+            this.timer2.Interval = 10;
             this.timer2.Tick += new System.EventHandler(this.label1_Click);
             // 
             // buttom1
             // 
+            this.buttom1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.buttom1.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.buttom1.Location = new System.Drawing.Point(282, 274);
+            this.buttom1.Location = new System.Drawing.Point(303, 252);
             this.buttom1.Name = "buttom1";
             this.buttom1.Size = new System.Drawing.Size(227, 98);
             this.buttom1.TabIndex = 1;
             this.buttom1.Text = "Przejdź do kolejnej strony";
-            this.buttom1.UseVisualStyleBackColor = true;
+            this.buttom1.UseVisualStyleBackColor = false;
             this.buttom1.Click += new System.EventHandler(this.button1_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.InfoText;
+            this.BackColor = System.Drawing.SystemColors.GrayText;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.buttom1);
             this.Controls.Add(this.label1);

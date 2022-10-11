@@ -43,8 +43,7 @@ namespace Laboratoria1
 
         private void button3_Click(object sender, EventArgs e)
         {
-            stopwatch.Restart();
-            stopwatch.Stop();
+            stopwatch.Reset();
         }
 
         private void button4_Click(object sender, EventArgs e)
